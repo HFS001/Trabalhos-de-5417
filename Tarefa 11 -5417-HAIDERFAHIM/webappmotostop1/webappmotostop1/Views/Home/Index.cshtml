@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Welcome to Moto Shop";
+    var totalClients = ViewData["TotalClients"];
+    var totalMotos = ViewData["TotalMotos"];
+}
+
+<div class="text-center mt-5">
+    <h1 class="display-4">Welcome to Moto Shop</h1>
+    <p class="lead">Manage your motorcycles and clients easily and efficiently.</p>
+
+    <div class="row mt-4 justify-content-center">
+        <div class="col-md-3">
+            <div class="card shadow-sm border-primary text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Total Clients</h5>
+                    <p class="display-6">@totalClients</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm border-success text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Total Motorcycles</h5>
+                    <p class="display-6">@totalMotos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ Add buttons here -->
+    <div class="text-center mt-4">
+        <a class="btn btn-primary me-2" asp-controller="Clients" asp-action="Create">
+            ➕ Add New Client
+        </a>
+        <a class="btn btn-success" asp-controller="Motos" asp-action="Create">
+            ➕ Add New Motorcycle
+        </a>
+    </div>
+</div>
