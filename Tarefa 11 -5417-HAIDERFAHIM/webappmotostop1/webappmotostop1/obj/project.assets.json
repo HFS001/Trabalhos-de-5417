@@ -8071,11 +8071,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/haiderfahim/RiderProjects/webappmotostop1/webappmotostop1/webappmotostop1.csproj",
+      "projectUniqueName": "/Users/haiderfahim/RiderProjects/Trabalhos-de-5417/Tarefa 11 -5417-HAIDERFAHIM/webappmotostop1/webappmotostop1/webappmotostop1.csproj",
       "projectName": "webappmotostop1",
-      "projectPath": "/Users/haiderfahim/RiderProjects/webappmotostop1/webappmotostop1/webappmotostop1.csproj",
+      "projectPath": "/Users/haiderfahim/RiderProjects/Trabalhos-de-5417/Tarefa 11 -5417-HAIDERFAHIM/webappmotostop1/webappmotostop1/webappmotostop1.csproj",
       "packagesPath": "/Users/haiderfahim/.nuget/packages/",
-      "outputPath": "/Users/haiderfahim/RiderProjects/webappmotostop1/webappmotostop1/obj/",
+      "outputPath": "/Users/haiderfahim/RiderProjects/Trabalhos-de-5417/Tarefa 11 -5417-HAIDERFAHIM/webappmotostop1/webappmotostop1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/haiderfahim/.nuget/NuGet/NuGet.Config"

@@ -7,32 +7,32 @@
 <h1>List of Clients</h1>
 
 <p>
-    <a asp-action="Create">Add New Clients</a>
+    <a asp-action="Create" class="btn btn-primary">Add New Clients</a>
 </p>
-<table class="table">
+<table id="myTable" class="table table-striped">
     <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NIF)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Phone)
-            </th>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NIF)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
             
-            <th>
-                @Html.DisplayNameFor(model => model.Moto)
-            </th>
-            <th></th>
-        </tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Moto)
+        </th>
+        <th></th>
+    </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+    @foreach (var item in Model) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
@@ -61,6 +61,17 @@
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
-}
+    }
     </tbody>
 </table>
+@section Scripts{
+    <script>
+            $(document).ready( function () {
+                    $('#myTable').DataTable({
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/2.3.1/i18n/pt-PT.json"
+            }
+        });
+     } );
+    </script>
+}

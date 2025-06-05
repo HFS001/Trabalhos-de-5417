@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HOT6kpa3/S0=",
+  "dgSpecHash": "Bmu/BaoxLis=",
   "success": true,
-  "projectFilePath": "/Users/haiderfahim/RiderProjects/webappmotostop1/webappmotostop1/webappmotostop1.csproj",
+  "projectFilePath": "/Users/haiderfahim/RiderProjects/Trabalhos-de-5417/Tarefa 11 -5417-HAIDERFAHIM/webappmotostop1/webappmotostop1/webappmotostop1.csproj",
   "expectedPackageFiles": [
     "/Users/haiderfahim/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/haiderfahim/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",
