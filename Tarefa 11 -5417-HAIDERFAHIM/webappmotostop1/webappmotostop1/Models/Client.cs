@@ -8,25 +8,20 @@ namespace webappmotostop1.Models
         public int Id { get; set; }
 
         [Required]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         [Required]
-        [StringLength(9, ErrorMessage = "NIF must be 9 digits only.")]
-        public string NIF { get; set; }
-
+        public string NIF { get; set; } = string.Empty;
 
         [Required]
-        public string Email { get; set; }
+        public string Email { get; set; } = string.Empty;
 
         [Required]
-        public string Phone { get; set; }
-        
+        public string Phone { get; set; } = string.Empty;
 
-        // Foreign key
-        [Display(Name = "Motorcycle")]
+        [ForeignKey("Moto")]
         public int? MotoId { get; set; }
 
-        // Navigation property
         public Moto? Moto { get; set; }
     }
 }
